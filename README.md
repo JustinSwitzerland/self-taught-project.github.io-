@@ -19,3 +19,12 @@ No Number!
 The number should higher than 0
 
 然后我就不知道如何进行下去了。
+
+解决办法：
+原先的一个判断条件是： 
+if (!guess) {
+    displayMessage('No Number!');
+    
+   添加多一个条件（guess !== 0）修改成为：
+   if (!guess && guess !== 0) {
+    displayMessage('No Number!');
