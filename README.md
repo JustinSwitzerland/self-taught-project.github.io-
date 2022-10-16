@@ -28,3 +28,4 @@ if (!guess) {
    添加多一个条件（guess !== 0）修改成为：
    if (!guess && guess !== 0) {
     displayMessage('No Number!');
+
