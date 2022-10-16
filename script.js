@@ -9,7 +9,7 @@ document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
   console.log(guess, typeof guess);
   //当没有输入任何数字的时候
-  if (!guess) {
+  if (!guess && guess !== 0) {
     displayMessage('No Number!');
     //玩家胜利
   } else if (guess === secretNumber) {
